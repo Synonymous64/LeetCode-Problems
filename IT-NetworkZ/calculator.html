@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            font-family: 'Shizuru', cursive;
+        }
+        .operator:hover {
+            color: blue;
+            background-color: rgb(149, 153, 155);
+            border-radius: 2px solid black;
+        }
+        .container:hover {
+            background-color: aqua;
+        }
+        .container1:hover {
+            background-color: rgb(241, 9, 9);
+        }
+        header:hover {
+            color: rgb(126, 0, 251);
+            transition: 1s;
+        }
+    </style>
+    <script>
+        function add() {
+            var a1 = parseInt(document.getElementById("t1").value);
+            var a2 = parseInt(document.getElementById("t2").value);
+            var ansD = document.getElementById("t3");
+            ansD.value = a1 + a2;
+        }
+        function subtract() {
+            var a1 = parseInt(document.getElementById("t1").value);
+            var a2 = parseInt(document.getElementById("t2").value);
+            var ansD = document.getElementById("t3");
+            ansD.value = a1 - a2;
+        }
+        function product() {
+            var a1 = parseInt(document.getElementById("t1").value);
+            var a2 = parseInt(document.getElementById("t2").value);
+            var ansD = document.getElementById("t3");
+            ansD.value = a1 * a2;
+        }
+        function quotient() {
+            var a1 = parseInt(document.getElementById("t1").value);
+            var a2 = parseInt(document.getElementById("t2").value);
+            var ansD = document.getElementById("t3");
+            ansD.value = a1 / a2;
+        }
+    </script>
+    <header align="center"><u>BASIC CALCULATOR</u></header> <br>
+</head>
+
+<body>
+    <center>
+        <table border="2">
+            <tr class="container">
+                <td>Number 1 : </td>
+                <td><input type="number" name="t1" id="t1"></td>
+            </tr>
+            <tr class="container">
+                <td>Number 2 : </td>
+                <td><input type="number" name="t2" id="t2"></td>
+            </tr>
+            <tr class="container">
+                <td align="center">Result : </td>
+                <td><input type="number" name="t3" id="t3"></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2" class="container1">
+                    <input type="button" value="+" class="operator" onclick="add()">
+                    <input type="button" value="-" class="operator" onclick="subtract()">
+                    <input type="button" value="*" class="operator" onclick="product()">
+                    <input type="button" value="/" class="operator" onclick="quotient()">
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>GET ELEMENT BY ID</title>
+        <script>
+            function checkName()
+                  {
+                      var firstName = document.getElementById("name");
+                      var FName = /^[a-zA-Z]+$/;
+                      if(firstName.value == "")
+                      {
+                         alert("Enter First Name");
+                         firstName.style.background='red';
+                      }
+                      else if(!FName.test(firstName.value))
+                      {
+                         alert("Enter valid Characters..");
+                         firstName.style.background='red';
+                       
+                      }
+                  }
+
+            function myName(name, middlename, sirname){
+                name = document.getElementById("name").value;
+                middlename = document.getElementById("middlename").value;
+                sirname= document.getElementById("sirname").value;
+                alert(name);
+                alert(middlename);
+                alert(sirname);
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <table border="2">
+                <tr>
+                    <td width="50%" align="center">Name</td>
+                    <td><input type="text" name="" id="name" size="20" onblur="checkName()"></td>
+                </tr>
+                <tr>
+                    <td width="30%" align="center">Middle Name</td>
+                    <td><input type="text" name="" id="middlename" size="20"></td>
+                </tr>
+                <tr>
+                    <td width="30%" align="center">Last Name</td>
+                    <td><input type="text" name="" id="sirname" size="20"></td>
+                </tr>
+                <tr>
+                    <td width="30%" align="center" colspan="2"><input type="submit" value="submit" onclick="myName()"></td>
+                    
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
