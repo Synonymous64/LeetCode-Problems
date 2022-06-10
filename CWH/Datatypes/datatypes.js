@@ -44,7 +44,7 @@ function myName() {
 console.log("Datatype is "+(typeof myName));
 let date = new Date();
 console.log("Datatype is "+(typeof date));
-
+console.clear();
 
 
 
