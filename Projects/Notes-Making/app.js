@@ -73,12 +73,11 @@ function deleteNote(index){
 let search = document.getElementById('searchTxt');
 search.addEventListener("input", function(){
     let inputVal = search.value.toLowerCase();
-    let inputVal1 = search.value.toUpperCase();
     console.log("input event fired", inputVal);
     let noteCards = document.getElementsByClassName("noteCard");
     Array.from(noteCards).forEach(function(element){
         let cardTxt = element.getElementsByTagName("p")[0].innerText.toLowerCase();
-        if(cardTxt.includes(inputVal) ||cardTxt.includes(inputVal1) ){
+        if(cardTxt.includes(inputVal)){
             element.style.display = "block";
         } else {
             element.style.display = "none";
