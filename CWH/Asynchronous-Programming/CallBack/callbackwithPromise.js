@@ -35,7 +35,7 @@ function getStudent() {
   });
 }
 
-// let newStudent = { name: "Prajwal", subject: "Devops" };
+let newStudent = { name: "Prajwal", subject: "Devops" };
 // let newStudent; 
 
 // console.log(enrollStudent(newStudent, getStudent));
