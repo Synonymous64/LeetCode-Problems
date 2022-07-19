@@ -8,7 +8,7 @@ if (a !== undefined) {
   throw new Error("This is defined");
 } else console.log("This is undefined");
 
-try {
+try {/
 //   console.log(a / q);
     return a/2;
 } catch (error) {
