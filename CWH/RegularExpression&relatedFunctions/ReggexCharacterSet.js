@@ -2,7 +2,7 @@ console.log("This is about the Character Set (Reggex) in JavaScript");
 //! Character Set --> Denoted by [] 
 let reggex = /P[a-z]ajwal/ //* Anything between a-z will be matched with this expression
 reggex = /P[abc]ajwal/ //* if anything matches with given abc it will return the matched => TRUE or FALSE
-reggex = /P[^abc]ajwa[la]/ //* do not confuse it with the carot symbol (^) here this symbol used for not of if the given words will not the match the word from str then it will give it as TRUE otherwise FALSE 
+reggex = /P[^abc]ajwa[la]/ //* do not confuse it with the carot symbol (^) here this symbol used for not of if the given words will do not the match the word from str then it will give it as TRUE otherwise FALSE 
 reggex = /P[a-zA-Z]ajwa[a-zA-Z1-9]/ //* it means it can choose words from small and big alphabets and from back side small, big alphabets as well as numbers.
 reggex = /P[a-zA-Z]ajwa[a-zA-Z1-9][0-9]/ //* it means it can choose words from small and big alphabets and from back side small, big alphabets as well as numbers and it needs an extra numbers at the last of the prajwal
 
