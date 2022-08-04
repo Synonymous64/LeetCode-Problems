@@ -3,6 +3,9 @@ const name = document.getElementById("name");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 
+let validEmail = false;
+let validPhone = false;
+let validUsername = false;
 // console.table(name, email, phone);
 name.addEventListener("blur", () => {
   // console.log("The name is blurred");
@@ -12,9 +15,11 @@ name.addEventListener("blur", () => {
   if (regex.test(str)) {
     console.log("Your name is Valid");
     name.classList.remove("is-invalid");
+    validUsername = true;
   } else {
     console.log("It didn't matched");
     name.classList.add("is-invalid");
+    validUsername = false;
   }
 });
 email.addEventListener("blur", () => {
@@ -24,9 +29,11 @@ email.addEventListener("blur", () => {
     if (regex.test(str)) {
       console.log("Your name is Valid");
       email.classList.remove("is-invalid");
+      validEmail = true;
     } else {
       console.log("It didn't matched");
       email.classList.add("is-invalid");
+      validEmail = false;
     }
 });
 phone.addEventListener("blur", () => {
@@ -36,22 +43,25 @@ phone.addEventListener("blur", () => {
   console.log(regex, str);
   if (regex.test(str)) {
     console.log("Your phone number is Valid");
-    phone.classList.remove("is-invalid");
+    phone.classList.remove("is-invalid");validPhone = true;
   } else {
     console.log("Your phone number is Invalid");
     phone.classList.add("is-invalid");
+    validPhone = false;
   }
 });
 let submit = document.getElementById("submit");
 let success = document.getElementById("success")
 submit.addEventListener("click", (e) =>{
     e.preventDefault(); //! It will prevent the reload of the website after the submit button
-    // TODO ~ 4-:06
     // form submission
+    let warning = document.getElementById("warning");
     console.log("The Submit button is Pressed");
-    if(name.value && phone.value && email.value){
+    if(validUsername && validEmail && validPhone){
         success.classList.add("show")
+        warning.classList.remove("show")
     } else {
         success.classList.remove("show")
+        warning.classList.add("show")
     }
 })
