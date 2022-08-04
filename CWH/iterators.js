@@ -23,8 +23,9 @@ const Iterators = (values) => {
 };
 
 const fruits = Iterators(myArray);
+console.log(fruits.next());
+console.log(fruits.next().value); // for printing specific values
 console.log(fruits.next().value);
 console.log(fruits.next().value);
 console.log(fruits.next().value);
-console.log(fruits.next().value);
-console.log(fruits.next().value);
+// console.log(fruits.next().value);
