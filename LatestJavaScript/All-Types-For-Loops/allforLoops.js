@@ -12,10 +12,10 @@ let obj = {
   "Roll no": 143,
   age: 20,
 };
-//! It will only display the key and not the values 
-for(eli in obj){
-    console.log(eli); //* Check here
-    // console.log("Value of " + eli + " is " + obj[eli]); //* Alter way to print both
+//! It will only display the key and not the values
+for (eli in obj) {
+  console.log(eli); //* Check here
+  // console.log("Value of " + eli + " is " + obj[eli]); //* Alter way to print both
 }
 
 //! For Of loop
@@ -23,7 +23,36 @@ for(eli in obj){
 // for(eli of obj){
 //     console.log(eli);
 // }
-//! This would be working 
-for(eli of "Prajwal"){
-    console.log(eli);
+//! This would be working
+for (eli of "Prajwal") {
+  console.log(eli);
+}
+
+obj = {
+  name: "Prajwal Urkude",
+  hobbies: "Reading, Watching Movies and Documentaries, Programming",
+  skill: "React",
+  language: "C++, C, Java, Javascript, Git",
+};
+
+console.table(obj);
+
+//* Traversing Object through traditional Loop
+// for (let i = 0; i < Object.keys(obj).length; ++i) {
+//   console.log(Object.values(obj)[i]);
+// }
+
+//* Traversing Object through for in loop
+// for (let eli in obj) {
+//   console.log(eli + " " + obj[eli]);
+// }
+//! Won't work 
+// for (let eli of obj){
+//   console.log(eli);
+// }
+
+//* For of Loop on Objects
+let arr = ["Prajwal", "Sunita", "Ayush", "Vilas"];
+for(let eli of arr){
+  console.log(eli);
 }
