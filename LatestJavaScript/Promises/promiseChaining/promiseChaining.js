@@ -36,7 +36,10 @@ const loadScript = (src) => {
 // let p3 = loadScript("https://leeSynonymous/");
 let p3 = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js")
 p3.then((value) => {
-    console.log("Script has been loaded "+ value);
+    console.log("Script has been loaded " + value);
+    return loadScript("https://leeSynonymous/");
+}).then((value) => {
+    console.log('Next Script ready to run');
 }).catch((error) => {
     console.log('Uncaught error found sorry :/' + error);
 });
