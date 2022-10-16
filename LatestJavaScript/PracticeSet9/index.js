@@ -75,7 +75,7 @@ const res2 = async () => {
     let a2 = k2();
     let a3 = k3();
     // console.log(a1, a2, a3);
-    //! Easiest way to fetch all promises 
+    //! Easiest way to fetch all promises takes lesser time 
     let promiseAll = await Promise.all([a1, a2, a3]);
     console.log(promiseAll);
     console.timeEnd("run");
