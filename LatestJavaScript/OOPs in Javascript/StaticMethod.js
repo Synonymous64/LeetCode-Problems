@@ -13,4 +13,4 @@ class Animal {
 let a = new Animal('panda');
 a.walk();
 //! static method is used when we want the function to be available in the class but still can not be accessed by individual objects it provides security
-// a.capitalize('op') //* won't work
+// console.log(a.capitalize('op')) //* won't work
