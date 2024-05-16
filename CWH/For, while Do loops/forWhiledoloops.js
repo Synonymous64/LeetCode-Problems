@@ -26,8 +26,8 @@ console.log("Here we will be studying about FOR | WHILE | DO | LOOPS");
 // })
 
 let arr = [3,2,3,4,5,6,9];            //* for iteration in arrays special loop in javascript
-arr.forEach(function(element, index, arr){
-    console.log(element, index, arr);      //* it can also give you the index and the array
+arr.forEach(function(element1, index1, arr1){
+    console.log(element1, index1, arr1);      //* it can also give you the index and the array
 }) 
 let obj = {
     name : "Prajwal Urkude",
@@ -35,6 +35,8 @@ let obj = {
     type : "DEVELOPER",
     OS : "Ubuntu"
 }
-for(let key in obj){
-    console.log(`${key} of the object is ${obj[key]}`);
-}
+// for(let key in obj){
+//     console.log(`${key} of the object is ${obj[key]}`);
+// }
+// var a = `Prajw'al`
+// console.log(a);

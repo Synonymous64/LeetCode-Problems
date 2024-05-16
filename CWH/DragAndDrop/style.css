@@ -1,0 +1,35 @@
+body {
+  background-color: blue;
+}
+.imgBox {
+  background-repeat: no-repeat;
+  background-size: 155px 150px;
+  background-image: url("dragon.jpeg");
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 2px 20px 20px 2px;
+  cursor: pointer;
+}
+.whiteBox {
+  display: inline-block;
+  height: 155px;
+  width: 155px;
+  margin: 10px;
+  background-color: aliceblue;
+  border: 2px solid;
+}
+.whiteBox:hover {
+  /* background-color: aquamarine; */
+  border-color: aquamarine;
+}
+.hold {
+  border: 4px solid red;
+}
+.hide {
+  border: none;
+}
+.dashed {
+    background-color: rgb(196, 199, 195);
+    border-style: dashed;
+}
